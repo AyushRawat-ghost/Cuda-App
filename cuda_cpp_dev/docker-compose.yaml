@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  cuda-cpp-dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: cuda_cpp_dev_env
+    
+    # CRITICAL: GPU PASSTHROUGH
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all 
+              capabilities: [gpu]
+              
+    # Map a local folder for saving your C++ source code and executables
+    volumes:
+      - ./src:/home/learner/src 
+    
+    # Run interactively so you can compile and execute commands
+    stdin_open: true 
+    tty: true 
+    restart: always
