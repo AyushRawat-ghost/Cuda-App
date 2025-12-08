@@ -17,7 +17,7 @@ services:
               
     # Map a local folder for saving your C++ source code and executables
     volumes:
-      - ./src:/home/learner/src 
+      - ./codex:/home/learner/workspace
     
     # Run interactively so you can compile and execute commands
     stdin_open: true 
