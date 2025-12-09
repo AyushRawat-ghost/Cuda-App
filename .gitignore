@@ -11,6 +11,8 @@
 *.lib
 *.mod
 *.d
+*.o
+*.out
 
 ### Build and Configuration Directories ###
 # Directories commonly created by CMake
