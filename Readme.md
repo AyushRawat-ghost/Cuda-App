@@ -23,8 +23,8 @@ Every thread calculates its unique position across the entire grid using the fol
   * `threadIdx`: The index of the current thread in the block (starting from 0).
 
 **Unique Global Index Calculation:**
-$$\text{Global Row} = (\text{blockIdx.y} \times \text{blockDim.y}) + \text{threadIdx.y}$$
-$$\text{Global Column} = (\text{blockIdx.x} \times \text{blockDim.x}) + \text{threadIdx.x}$$
+Global Row = (blockIdx.y * blockDim.y) + threadIdx.y
+Global Column = (blockIdx.x * {blockDim.x) + threadIdx.x
 
 ### 1.3. Kernels and Execution Flow
 
