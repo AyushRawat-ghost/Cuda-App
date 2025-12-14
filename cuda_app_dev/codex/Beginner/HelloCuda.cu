@@ -1,3 +1,4 @@
+//  Memory allocation, event Handling
 #include <iostream>
 #include <cuda_runtime.h>
 #include <cstring>

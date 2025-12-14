@@ -1,3 +1,4 @@
+// Benchmarking CPU vs GPU
 #include <iostream>
 #include <cuda_runtime.h>
 #include <time.h>

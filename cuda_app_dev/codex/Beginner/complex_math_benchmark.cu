@@ -1,3 +1,4 @@
+// Serious Benchmark, complex error handling
 #include <cuda_runtime.h>
 #include <stdio.h>
 #include <time.h>

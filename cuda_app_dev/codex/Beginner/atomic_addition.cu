@@ -1,3 +1,4 @@
+// Atomic op for updating single memory location without any Race Condition Issue
 #include <stdio.h>
 #include <iostream>
 #include <cuda_runtime.h>
